@@ -43,7 +43,7 @@ ll_append(){
 linked_list_traverse() {
     # Check if list is empty
     if [ $head -eq -1 ]; then 
-        echo "You have reached the end of the Linked list"
+        echo "You have reached the end of the Linked List"
         return
     fi 
     local i=$head
