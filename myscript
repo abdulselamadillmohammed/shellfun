@@ -1,0 +1,17 @@
+#!/bin/sh
+echo "Script name: $0"
+echo "Number of args: $#"
+echo "1st arg: $1"
+echo "2nd arg: $2"
+echo "3rd arg: $3"
+echo "All args (\$*): $*"
+echo "All args (\$@): $@"
+
+for arg in "$*"; do
+  echo "Arg (*): $arg"
+done
+
+for arg in "$@"; do
+  echo "Arg (@): $arg"
+done
+
