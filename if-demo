@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]; then
+  echo 'No argument found.'
+elif [ "$1" '<' m ]; then
+  echo "$1 < m"
+elif [ "$1" '>' m ]; then
+  echo "$1 > m"
+else
+  echo "$1 = m"
+fi
+
+echo
+
+if mkdir mydir; then
+  echo 'mkdir done'
+else
+  echo "mkdir failed, exit code $?"
+fi
