@@ -1,0 +1,15 @@
+#!/bin/sh
+
+x=5
+while [ $x -gt 0 ]; do
+  echo $x
+  x=$(expr $x - 1)
+done
+
+echo
+
+while ! mkdir mydir ; do
+  echo 'mkdir failed, trying again after 5 seconds'
+  sleep 5
+done
+echo 'mkdir done'
