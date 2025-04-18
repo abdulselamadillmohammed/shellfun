@@ -1,0 +1,16 @@
+#!/bin/sh
+
+c=1
+while getopts M:nv myflag ; do
+  echo "called getopts ${c}th time"
+  echo "\$myflag = $myflag"
+  echo "\$OPTIND = $OPTIND"
+  echo "\$OPTARG = '$OPTARG'"
+  echo
+  c=$(expr $c + 1)
+done
+
+echo "called getopts ${c}th time"
+echo "Final \$myflag = $myflag"
+echo "Final \$OPTIND = $OPTIND"
+echo "Final \$OPTARG = '$OPTARG'"
