@@ -9,7 +9,6 @@ elif [ "$1" '>' m ]; then
 else
   echo "$1 = m"
 fi
-
 echo
 
 if mkdir mydir; then
